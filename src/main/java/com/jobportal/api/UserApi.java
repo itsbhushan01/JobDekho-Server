@@ -21,7 +21,6 @@ import com.jobportal.dto.UserDto;
 import com.jobportal.entity.User;
 import com.jobportal.exception.JobPortalException;
 import com.jobportal.service.impl.UserServiceImple;
-
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Pattern;

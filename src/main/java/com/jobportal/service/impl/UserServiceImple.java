@@ -87,7 +87,7 @@ public class UserServiceImple implements UserService{
 		String genOtp=Utilities.generateOTP();
 		OTP otp=new OTP(email,genOtp,LocalDateTime.now());
 		otpRepository.save(otp);
-		message.setText("Your Code"+genOtp,false);
+		message.setText(genOtp,false);
 		mailSender.send(mm);
 	}
 
